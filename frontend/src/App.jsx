@@ -9,7 +9,7 @@ function App() {
 
 
   const fetchFromBackend = () => {
-    fetch('http://localhost:3001/api/message')
+    fetch('http://localhost:3001/message')
       .then(response => response.json())
       .then(data => setMessage(data.message))
       .catch(error => console.error('Error:', error));
